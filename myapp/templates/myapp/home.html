@@ -1,0 +1,27 @@
+{% extends 'myapp/base.html' %} {% block content %}
+
+<section class="cont">
+<div class="circle"></div>
+<div class="content">
+    <div class="textBox">
+        <h2>Its not just Transportation <br> Its <span>Kadibo</span></h2>
+        <p>Book our Luxurius Transit Vehicles and travel at your own comfort with the best of prices
+            . Kadibo is the <span>Better version</span> of Transportation.
+        </p>
+    </div>
+    <div class="imgBox">
+        {% load static %}
+        <img src="{% static 'mysite/images/bus.png' %}" class="kadibo">
+    </div>
+</div>
+<ul class="thumb">
+    <li><img src="{% static 'mysite/images/busthumb.png' %}"  onclick="imgSlider()"></li>
+    <li><img src="{% static 'mysite/images/audithumb.png' %}" onclick="imgSlider()"></li>
+    <li><img src="{% static 'mysite/images/minthumb.png' %}" onclick="imgSlider()"></li>
+</ul>
+
+</section>
+
+<script src="{% static 'mysite/plp.js' %}"></script>
+
+{% endblock %}
