@@ -29,4 +29,9 @@ python3 manage.py createsuperuser
 Run the project.
 python3 manage.py runserver
 
+Admin Section 
+We have used jazzmin to customize admin section therefore use 
+pip install -U django-jazzmin
+ add jazzmin in the apps section 
+
 #All the best
